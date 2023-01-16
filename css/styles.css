@@ -15,7 +15,7 @@ ul {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 50px;
   line-height: 120%;
 }
 
@@ -30,7 +30,7 @@ h2,
 h2 {
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 130%;
 }
 
@@ -148,7 +148,7 @@ header ul {
 
 .skills-list {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 150%;
   margin-bottom: 130px;
 }

@@ -99,6 +99,15 @@ nav li a:hover {
   }
 }
 
+@media (max-width: 404px) {
+  nav ul {
+    padding: 10px 0;
+  }
+  nav ul li {
+    margin: 0 2px;
+  }
+}
+
 /* Header */
 
 header {

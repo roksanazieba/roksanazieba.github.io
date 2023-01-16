@@ -1,6 +1,6 @@
 body {
   font-family: "Quicksand", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 body,
@@ -151,10 +151,18 @@ footer {
 }
 
 footer h2 {
-  font-size: 50px;
+/*  font-size: 50px;*/
   padding: 50px;
   margin-bottom: 50px;
   line-height: 200%;
+}
+
+@media (max-width: 540px) {
+
+  footer h2 {
+    font-size: 16px;
+  }
+
 }
 
 footer h2 a {

@@ -14,6 +14,11 @@ ul {
   font-weight: 800;
 }
 
+h1 {
+  font-size: 70px;
+  line-height: 120%;
+}
+
 h1,
 h2,
 .skills-list {
@@ -24,6 +29,8 @@ h2,
 h2 {
   margin-top: 0;
   margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 130%;
 }
 
 h3 {
@@ -39,12 +46,32 @@ img {
   max-width: 100%;
 }
 
+p {
+  line-height: 150%;
+}
+
+ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+
+
+/* Navigation */
+
 nav {
   background-color: #cc8fc5;
   position: fixed;
   z-index: 1;
   width: 100%;
   font-size: 14px;
+  top: 0;
+}
+
+nav ul {
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
 }
 
 nav ul li {
@@ -55,15 +82,30 @@ nav ul li {
   text-transform: uppercase;
 }
 
-nav ul {
-  margin: 0 auto;
-  text-align: center;
-  padding: 30px;
+nav li a {
+  text-decoration: none;
+  color: black;
 }
 
+nav li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  nav ul {
+    padding: 15px 0;
+  }
+  nav ul li {
+    margin: 0 5px;
+  }
+}
+
+/* Header */
+
 header {
-  top: 70px;
-  position: relative;
+  margin-top: 70px; /* nav height */
+  /*top: 70px;
+  position: relative;*/
   margin-bottom: 220px;
   background-image: url("../img/unbleached_silk.png");
   background-repeat: no-repeat;
@@ -76,38 +118,14 @@ header ul {
   font-weight: 800;
 }
 
-h1 {
-  font-size: 70px;
-  line-height: 120%;
+@media (max-width: 640px) {
+  header {
+    margin-top: 47px; /* nav height */
+  }
 }
 
-h2 {
-  font-size: 30px;
-  line-height: 130%;
-}
 
-h1,
-h2 {
-  font-weight: normal;
-}
-
-p {
-  line-height: 150%;
-}
-
-ul li {
-  list-style: none;
-  margin: 10px 0;
-}
-
-nav li a {
-  text-decoration: none;
-  color: black;
-}
-
-nav li a:hover {
-  text-decoration: underline;
-}
+/* */
 
 .button {
   border: 1px solid #7d4600;
@@ -154,34 +172,6 @@ nav li a:hover {
   margin-top: 10px;
 }
 
-footer {
-  text-align: center;
-}
-
-footer h2 {
-  font-size: 50px;
-  padding: 50px;
-  margin-bottom: 50px;
-  line-height: 200%;
-}
-
-@media (max-width: 1024px) {
-  footer h2 {
-    font-size: 32px;
-  }
-}
-
-@media (max-width: 540px) {
-  footer h2 {
-    font-size: 16px;
-  }
-}
-
-footer h2 a {
-  text-decoration: none;
-  color: black;
-}
-
 .right-alignment {
   text-align: right;
 }
@@ -197,4 +187,35 @@ footer h2 a {
 
 .brown {
   color: #7d4600;
+}
+
+
+/* Footer */
+
+footer {
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 50px;
+  padding: 50px;
+  margin-bottom: 50px;
+  line-height: 200%;
+}
+
+footer h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 1024px) {
+  footer h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 540px) {
+  footer h2 {
+    font-size: 16px;
+  }
 }

@@ -1,3 +1,7 @@
+:root {
+  --color-primary: #191919;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
@@ -138,6 +142,10 @@ nav li a:hover {
   padding: 50px;
 }
 
+.project .col-sm img {
+  margin-bottom: 2rem;
+}
+
 .peach {
   background-color: #f4d6cc;
 }
@@ -151,18 +159,22 @@ footer {
 }
 
 footer h2 {
-/*  font-size: 50px;*/
+  font-size: 50px;
   padding: 50px;
   margin-bottom: 50px;
   line-height: 200%;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 1024px) {
+  footer h2 {
+    font-size: 32px;
+  }
+}
 
+@media (max-width: 540px) {
   footer h2 {
     font-size: 16px;
   }
-
 }
 
 footer h2 a {

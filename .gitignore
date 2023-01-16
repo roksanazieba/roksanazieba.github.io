@@ -1,0 +1,11 @@
+# Exclude OS X folder attributes
+.DS_Store
+
+# Exclude source files
+*.json
+*.psd
+
+# Exlude unfinished files
+core.scss
+form.scss
+list.scss
